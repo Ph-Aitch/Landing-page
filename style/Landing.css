@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto';
+    font-size: 18px;
+    min-width: 855px;
+}
+
+/* header seciton start */
+
+header {
+    background-color: #1f2937;
+}
+
+.nav {
+   width: 100%;
+   height: 50px;
+   font-size: 24px;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #f9faf8;
+    padding: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    width: 30%;
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logolink {
+    width: 30%;
+    min-width: fit-content ;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.logo {
+   max-height: 50px ;
+   width: auto;
+}
+
+/* hero section */
+
+.hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heroText {
+    width: 40%;
+    min-width: 400px;
+    max-width: 600px;
+    height: 60%;
+    overflow-y:auto;
+    position: relative;
+}
+
+.heroText h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.heroText p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.heroText a {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    text-decoration: none;
+    color: #f9faf8;
+    background-color: #3882f6;
+    padding: 8px 30px;
+    border-radius: 8px;
+}
+
+.heroimg {
+    height: 60%;
+    width: 400px;
+    min-width: fit-content;
+}
+
+.heroimg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* hero and header section End */
+/* site body section start */
+
+.topWrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.topWrapper h2 {
+    margin: 40px 0;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 800px;
+    min-width: 640px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3882f6;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    width: 150px;
+    min-height: 300px;
+}
+
+/* body end */
+/* quote section */
+.quote-section {
+    width: 100%;
+    min-height: 500px;
+    color: #1f2937;
+    background-color: #e5e7eb;
+    display: flex;
+}
+.quote {
+    margin: 0 auto;
+    align-self: center;
+    width: 70%;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.sayer {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    text-align: end;
+}
+
+/* quote end */
+/* call out start */
+
+.callout-section {
+    width: 100%;
+    height: 400px;
+    place-content: center;
+}
+
+.callout {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 70%;
+    min-width: max-content;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.callText, .callBtn {
+    min-width: fit-content;
+}
+
+.callText h3 {
+    font-size: 32px;
+}
+
+.callText p {
+    font-size: 24px;
+}
+
+.btn { 
+    background-color: inherit;
+    color: inherit;
+    padding: 8px 30px;
+    border-radius: 12px;
+    border-color: #f9faf8;
+    cursor: pointer;
+    font-size: large;
+}
+
+/* callout end  */
+/* footer  */
+
+footer {
+    text-align: center;
+    place-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
